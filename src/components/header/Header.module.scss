@@ -1,0 +1,40 @@
+.wrapper {
+  height: 100px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  background-color: rgb(254, 251, 251);
+  .header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100px;
+    place-items: center;
+    width: 100%;
+
+    .logo {
+      grid-column: span 4;
+      font-size: 30px;
+      font-weight: 700;
+      width: 100%;
+    }
+    .title {
+      grid-column: span 6;
+      font-size: 60px;
+      font-weight: 900;
+      width: 100%;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      grid-column: span 2;
+      font-size: 20px;
+      font-weight: 300;
+      width: 100%;
+      span {
+        text-shadow: var(--text-shadow);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
