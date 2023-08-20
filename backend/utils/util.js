@@ -12,4 +12,4 @@ function validateUrl(value) {
   return !!urlPattern.test(value);
 }
 
-module.exports = { validateUrl };
+module.exports = validateUrl;

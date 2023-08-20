@@ -1,0 +1,6 @@
+POST "http://localhost:3333/api/url/shorten"
+Content-Type: application/json
+
+{
+    "longUrl" : "https://www.amazon.com/deal/a852cb72/?_encoding=UTF8&showVariations=true&_ref=dlx_gate_dd_dcl_tlt_a852cb72_dt&pd_rd_w=yGSGD&content-id=amzn1.sym.488b2a1a-d1f8-4aa5-ae8e-c6a2d8bd006a&pf_rd_p=488b2a1a-d1f8-4aa5-ae8e-c6a2d8bd006a&pf_rd_r=C1YMZAMQ96XSVNWKTRQA&pd_rd_wg=Lqe4v&pd_rd_r=f318a327-39d0-4a29-aafa-1a7dce012cce&ref_=pd_gw_unk"
+}

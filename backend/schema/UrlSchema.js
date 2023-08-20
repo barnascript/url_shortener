@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const UrlSchema = new mongoose.Schema({
-  urlId: {
+  urlCode: {
     type: String,
     required: true,
   },
-  originalUrl: {
+  longUrl: {
     type: String,
     required: true,
   },
@@ -13,15 +13,10 @@ const UrlSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  clicks: {
-    type: Number,
-    required: true,
-    default: 0,
-  },
   date: {
     type: String,
     default: Date.now,
   },
 });
 
-module.exports = mongoose.model("url", UrlSchema);
+module.exports = mongoose.model("Url", UrlSchema);
