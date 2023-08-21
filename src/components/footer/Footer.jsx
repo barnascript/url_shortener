@@ -3,8 +3,9 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <div className={`sw ${styles.wrapper}`}>
-      <small>barnascript@gmail.com</small> <small>©Copyright 2023</small>
-      <small>All rights reserved</small>
+      <small className={styles.email}>barnascript@gmail.com</small>{" "}
+      <small className={styles.copyright}>©Copyright 2023</small>
+      <small className={styles.rights}>All rights reserved</small>
     </div>
   );
 };

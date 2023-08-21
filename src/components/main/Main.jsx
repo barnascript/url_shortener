@@ -6,6 +6,7 @@ function Main() {
   const [url, setUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
   const [isCopied, setIsCopied] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -14,11 +15,13 @@ function Main() {
       alert("Please enter a url");
       return;
     }
+    setIsLoading(true);
 
     axios
       .post("http://localhost:3333/api/url/shorten", { longUrl: url })
       .then((res) => {
         setShortUrl(res.data.shortUrl);
+        setIsLoading(false);
       })
       .catch((err) => {
         console.log(err.message);
@@ -29,7 +32,7 @@ function Main() {
 
   const copyUrl = async () => {
     if (!shortUrl) {
-      setIsCopied(false);
+      return null;
     }
     await navigator.clipboard.writeText(shortUrl);
     setIsCopied(true);
@@ -58,7 +61,7 @@ function Main() {
         <input
           type="text"
           className={styles.shortened_link}
-          value={shortUrl}
+          value={isLoading ? "Loading..." : shortUrl}
           onChange={(e) => setShortUrl(e.target.value)}
           disabled
         />
@@ -66,7 +69,7 @@ function Main() {
           onClick={copyUrl}
           className={!isCopied ? styles.button : styles.copied_shortened_link}
         >
-          {!isCopied && !shortUrl ? "Copy Link" : "Copied!!!"}
+          {!isCopied ? "Copy Link" : "Copied!!!"}
         </button>
       </div>
     </section>

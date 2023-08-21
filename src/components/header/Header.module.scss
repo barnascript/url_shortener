@@ -32,5 +32,68 @@
         cursor: pointer;
       }
     }
+    .mobile_links {
+      display: none;
+    }
+
+    .hamburger,
+    .times {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: 70px;
+
+    .header {
+      height: 70px;
+
+      .title {
+        white-space: nowrap;
+        font-size: 30px;
+        font-weight: 900;
+        margin-left: -20px;
+      }
+
+      .links {
+        display: none;
+      }
+      .mobile_links {
+        padding-right: 20px;
+        display: flex;
+        position: absolute;
+        right: 0;
+        align-items: flex-end;
+        background-color: white;
+        height: 100vh;
+        top: 70px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        grid-column: span 2;
+        font-size: 20px;
+
+        width: 100%;
+        padding-top: 50px;
+        span {
+          text-shadow: var(--text-shadow);
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      .hamburger,
+      .times {
+        position: absolute;
+        display: block;
+        transform: scale(2);
+        right: 20px;
+        cursor: pointer;
+        top: 30px;
+      }
+    }
   }
 }
