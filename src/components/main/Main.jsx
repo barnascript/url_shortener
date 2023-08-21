@@ -28,6 +28,9 @@ function Main() {
   };
 
   const copyUrl = async () => {
+    if (!shortUrl) {
+      setIsCopied(false);
+    }
     await navigator.clipboard.writeText(shortUrl);
     setIsCopied(true);
   };
@@ -63,7 +66,7 @@ function Main() {
           onClick={copyUrl}
           className={!isCopied ? styles.button : styles.copied_shortened_link}
         >
-          {!isCopied ? "Copy Link" : "Copied!!!"}
+          {!isCopied && !shortUrl ? "Copy Link" : "Copied!!!"}
         </button>
       </div>
     </section>

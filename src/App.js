@@ -1,12 +1,9 @@
-import { Header } from "./exports/header";
-import { Main, ViewUrls } from "./exports/main";
+import { Home } from "./exports/pages";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Main />
-      <ViewUrls />
+      <Home />
     </div>
   );
 }

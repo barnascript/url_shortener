@@ -51,3 +51,7 @@ button, input{
   border: none;
   outline: none;
 }
+
+h1{
+  color: red;
+}
