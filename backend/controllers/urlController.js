@@ -4,7 +4,7 @@ const validUrl = require("valid-url");
 
 const postUrl = async (req, res) => {
   const { longUrl } = req.body;
-  const baseUrl = process.env.DOMAIN_URL;
+  const baseUrl = "https://url-xxqg.onrender.com";
 
   if (!validUrl.isUri(baseUrl)) {
     return res.status(401).json("Invalid base url");
