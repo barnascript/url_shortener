@@ -18,7 +18,7 @@ function Main() {
     setIsLoading(true);
 
     axios
-      .post("http://localhost:3333/api/url/shorten", { longUrl: url })
+      .post("https://url-xxqg.onrender.com/api/url/shorten", { longUrl: url })
       .then((res) => {
         setShortUrl(res.data.shortUrl);
         setIsLoading(false);
@@ -29,6 +29,8 @@ function Main() {
 
     setUrl("");
   };
+
+  // g
 
   const copyUrl = async () => {
     if (!shortUrl) {
