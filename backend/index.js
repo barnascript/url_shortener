@@ -3,8 +3,6 @@ const cors = require("cors");
 const connectDb = require("./config/db");
 const router = require("./routes/index");
 
-//simple_shell_token = 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
-
 connectDb();
 
 const app = express();

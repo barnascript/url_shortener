@@ -18,7 +18,7 @@ function Main() {
     setIsLoading(true);
 
     axios
-      .post("https://url-xxqg.onrender/api/url/shorten", { longUrl: url })
+      .post("/api/url/shorten", { longUrl: url })
       .then((res) => {
         setShortUrl(res.data.shortUrl);
         setIsLoading(false);

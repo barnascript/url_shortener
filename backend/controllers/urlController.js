@@ -4,11 +4,13 @@ const validUrl = require("valid-url");
 
 const postUrl = async (req, res) => {
   const { longUrl } = req.body;
-  const baseUrl = "https://url-xxqg.onrender";
+  const baseUrl = req.protocol + "://" + req.headers.host;
 
-  if (!validUrl.isUri(baseUrl)) {
-    return res.status(401).json("Invalid base url");
-  }
+  console.log(baseUrl);
+
+  // if (!validUrl.isUri(baseUrl)) {
+  //   return res.status(401).json("Invalid base url");
+  // }
 
   //create url code
   const urlCode = shortid.generate();
