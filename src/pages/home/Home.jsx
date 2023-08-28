@@ -1,11 +1,14 @@
 import { Header } from "../../exports/header";
-import { Main, Footer } from "../../exports/main";
+import { Main, Footer, Faqs, Description } from "../../exports/main";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
-    <div>
-      <Header />
+    <div className={styles.wrapper}>
+      {/* <Header /> */}
       <Main />
+      <Description />
+      <Faqs />
       <Footer />
     </div>
   );

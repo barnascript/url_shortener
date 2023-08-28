@@ -1,0 +1,103 @@
+.wrapper {
+  background-color: var(--button-color);
+  padding-top: 50px;
+  padding-bottom: 100px;
+  .container {
+    .heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 40px;
+
+      .faq_icon {
+        margin-top: 30px;
+        transform: scale(7);
+        margin-left: 50px;
+      }
+    }
+
+    .faqs {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 30px;
+      margin-top: 120px;
+      position: relative;
+      height: auto;
+
+      .faq {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        grid-column: span 6;
+        padding-bottom: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: auto;
+        position: relative;
+
+        .faq_title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          padding-left: 20px;
+
+          h3 {
+            font-size: 16px;
+          }
+
+          .faq_title_icon {
+            transform: scale(1.4);
+            margin-right: 20px;
+          }
+        }
+
+        .absolute {
+          position: absolute;
+          transition: all 0.5s ease-in-out;
+        }
+
+        .answer {
+          position: relative;
+          transition: all 0.5s ease-in-out;
+          padding-left: 20px;
+          height: auto;
+        }
+
+        .line_break {
+          height: 1px;
+          width: 100%;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    .container {
+      .heading {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        gap: 40px;
+
+        .faq_icon {
+          margin-top: 20px;
+          transform: scale(7);
+        }
+      }
+
+      .faqs {
+        margin-top: 120px;
+
+        .faq {
+          grid-column: span 12;
+        }
+      }
+    }
+  }
+}

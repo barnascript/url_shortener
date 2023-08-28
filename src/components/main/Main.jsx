@@ -41,7 +41,7 @@ function Main() {
   return (
     <section className={`sw ${styles.wrapper}`}>
       <div className={styles.text}>
-        <h1>Make every connection count</h1>
+        <h1>Your Free Url Shortener</h1>
         <p>
           Create short links. Share them anywhere. Track what’s working, and
           what’s not. All inside the CX Connections Platform.
@@ -50,12 +50,12 @@ function Main() {
       <form className={styles.input_field} onSubmit={onSubmit}>
         <input
           type="url"
-          placeholder="Paste your url here"
+          placeholder="Enter your link here"
           className={styles.input}
           value={url}
           onChange={(e) => setUrl(e.target.value)}
         />
-        <button className={styles.button}>Generate Short Link</button>
+        <button className={styles.button}>Shorten Link</button>
       </form>
       <div className={styles.link_text}>
         <input
@@ -64,10 +64,13 @@ function Main() {
           value={isLoading ? "Loading..." : shortUrl}
           onChange={(e) => setShortUrl(e.target.value)}
           disabled
+          placeholder="shortened link would appear here"
         />
         <button
           onClick={copyUrl}
-          className={!isCopied ? styles.button : styles.copied_shortened_link}
+          className={
+            !isCopied ? styles.copy_button : styles.copied_shortened_link
+          }
         >
           {!isCopied ? "Copy Link" : "Copied!!!"}
         </button>
