@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", monospace;
   font-size: 16px;
   background-color: var(--bg-color);
   color: white;

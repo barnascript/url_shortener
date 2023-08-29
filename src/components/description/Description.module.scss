@@ -15,11 +15,12 @@
   .text_info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     max-width: 50%;
     h3 {
       font-size: 25px;
       font-weight: 300;
+      margin-bottom: -25px;
     }
 
     button {

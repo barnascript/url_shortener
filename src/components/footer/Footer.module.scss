@@ -53,19 +53,47 @@
 
 @media screen and (max-width: 600px) {
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    width: 100%;
-    margin-bottom: 100px;
-    color: white;
-    margin-top: 200px;
-    width: 100%;
-    grid-gap: 27px;
+    .wrapper1 {
+      height: 200px;
+      .powered_by {
+        font-size: 25px;
+      }
+    }
+    .wrapper_2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--bg-color);
+      height: 100px;
+      width: 100%;
 
-    .email,
-    .copyright,
-    .rights {
-      grid-column: span 6;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color);
+        font-weight: 600;
+        width: 100%;
+
+        .links {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          max-width: 60%;
+
+          li {
+            cursor: pointer;
+          }
+        }
+
+        .rights {
+          display: flex;
+          align-self: flex-end;
+          justify-content: flex-end;
+          flex-direction: column;
+          white-space: nowrap;
+        }
+      }
     }
   }
 }
