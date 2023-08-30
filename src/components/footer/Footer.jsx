@@ -10,11 +10,11 @@ const Footer = () => {
       </div>
       <div className={`fw ${styles.wrapper_2}`}>
         <div className={`sw ${styles.container}`}>
-          <ul className={styles.links}>
-            <li>Terms and Conditions</li> <li>Privacy Policy</li>{" "}
-            <li>Cookie Policy</li> <li>Anti Spam Policy</li>{" "}
-            <li>Report abuse</li>
-          </ul>
+          <div className={styles.links}>
+            <span>Terms and Conditions</span> <span>Privacy Policy</span>{" "}
+            <span>Cookie Policy</span> <span>Anti Spam Policy</span>{" "}
+            <span>Report abuse</span>
+          </div>
           <small className={styles.rights}>
             CX Connections ©Copyright 2023
           </small>

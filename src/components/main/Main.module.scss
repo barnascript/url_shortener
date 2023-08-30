@@ -36,7 +36,7 @@
 
     .input {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 4px;
       font-size: 20px;
       padding-inline: 20px;
       color: black;
@@ -48,8 +48,8 @@
       justify-content: center;
       position: absolute;
       padding: 20px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
       width: 200px;
       font-size: 20px;
       right: 0px;
@@ -74,23 +74,23 @@
     width: 100%;
     input {
       width: 50%;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
       background-color: rgb(236, 228, 228);
       padding-inline: 20px;
       font-size: 14px;
-      height: 100%;
+      height: 50px;
     }
 
     .copy_button {
       padding-inline: 20px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
       cursor: pointer;
       font-weight: 300;
       font-size: 18px;
       width: 130px;
-      height: 100%;
+      height: 50px;
     }
 
     .copied_shortened_link {
@@ -98,7 +98,6 @@
       color: white;
 
       &:hover {
-        background-color: unset;
         background-color: green;
         color: white;
       }
@@ -106,35 +105,115 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .wrapper {
+    margin-top: 70px;
+
     .text {
+      gap: 20px;
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+
       p {
+        color: var(--color);
+        font-size: 20px;
         max-width: 100%;
       }
     }
 
     .input_field {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
       width: 100%;
+      position: static;
+      margin: auto;
 
       .input {
         width: 100%;
+        border-radius: 4px;
+        font-size: 20px;
+        padding-inline: 20px;
+        color: black;
+        height: 50px;
       }
       .button {
-        width: 130px;
-        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        padding: 20px;
+        border-radius: 4px;
+        width: 200px;
+        font-size: 20px;
+        right: 0px;
+        height: 50px;
+        top: 0;
+        color: white;
+        font-weight: 300;
+        background-color: var(--button-color);
+        cursor: pointer;
+
+        &:hover {
+          background-color: #1a73af;
+        }
       }
     }
 
     .link_text {
+      align-items: flex-start;
+      gap: 10px;
+      flex-direction: column;
       width: 100%;
+      margin-top: 40px;
+
+      .shortened_link {
+        width: 100%;
+        border-radius: 4px;
+        padding-inline: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      .copy_button {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .wrapper {
+    margin-top: 80px;
+
+    .text {
+      p {
+        max-width: 90%;
+      }
+    }
+
+    .input_field {
+      width: 100%;
+      .input {
+        width: 100%;
+      }
+      .button {
+        width: 180px;
+      }
+    }
+
+    .link_text {
       input {
         width: 100%;
       }
 
       .copy_button {
-        font-size: 15px;
-        width: 150px;
+        width: 200px;
+        height: 50px;
       }
     }
   }

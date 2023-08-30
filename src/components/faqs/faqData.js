@@ -27,7 +27,7 @@ Enhance your online presence with our effortless and free URL shortening tool pr
   },
   {
     id: 5,
-    question: "Does Rebrandly offers free plans?",
+    question: "Does Cx Connections offers free plans?",
     answer: `Yes. Rebrandly offers free plans, as well as paid and custom options that vary in price based on the number of links you need to share, the number of users associated with your account, how many custom domains you use and which features are the most important to you.`,
   },
   {
@@ -48,7 +48,7 @@ Enhance your online presence with our effortless and free URL shortening tool pr
   {
     id: 9,
     question: "Which link shortener is best?",
-    answer: `Cx Connections stands out as a top-rated URL shortener due to its dependability, security, and array of link management features. Beyond merely providing a way to shorten URL, Rebrandly also delivers performance tracking through click-through rates and the option to brand URLs. Explore Rebrandly's premium features to fully optimize your link management.`,
+    answer: `Cx Connections stands out as a top-rated URL shortener due to its dependability, security, and array of link management features. Beyond merely providing a way to shorten URL, Rebrandly also delivers performance tracking through click-through rates and the option to brand URLs. Explore Cx Connections's premium features to fully optimize your link management.`,
   },
   {
     id: 10,
@@ -58,7 +58,7 @@ Enhance your online presence with our effortless and free URL shortening tool pr
   {
     id: 11,
     question: "What is your privacy and data protection policy?",
-    answer: `We take your data privacy and security seriously and implement stringent measures to protect your links and information. Rebrandly is the only SOC2 Type 2 certified platform for branded and shortened URLs; we are also GDPR compliant. For full details on our privacy and security policies, please visit Rebrandly.com/Privacy-Policy.`,
+    answer: `We take your data privacy and security seriously and implement stringent measures to protect your links and information. Cx Connections is the only SOC2 Type 2 certified platform for branded and shortened URLs; we are also GDPR compliant. For full details on our privacy and security policies.`,
   },
   {
     id: 12,
@@ -74,7 +74,7 @@ Enhance your online presence with our effortless and free URL shortening tool pr
     id: 14,
     question:
       "I have more questions about Cx Connections, how can I contact you?",
-    answer: `We'd love to connect! Let’s discuss how Rebrandly can help brand and shorten your links so they perform as needed. Please get in touch with us here! get in touch with us here.`,
+    answer: `We'd love to connect! Let’s discuss how Cx Connections can help brand and shorten your links so they perform as needed. Please get in touch with us here! get in touch with us at barnascript@gmail.com.`,
   },
 ];
 
