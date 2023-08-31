@@ -7,7 +7,6 @@ const Home = () => {
       <Main />
       <Description />
       <Faqs />
-      <Footer />
     </div>
   );
 };

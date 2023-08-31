@@ -43,8 +43,8 @@ function Main() {
       <div className={styles.text}>
         <h1>Your Free Url Shortener</h1>
         <p>
-          Create short links. Share them anywhere. Track what’s working, and
-          what’s not. All inside the CX Connections Platform.
+          This is a clone. The Original Concept is
+          <a href="http://rebrandly.com"> found here</a>.
         </p>
       </div>
       <form className={styles.input_field} onSubmit={onSubmit}>
